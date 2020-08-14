@@ -5,7 +5,8 @@
 }
 
 :root {
-  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+  --bg-gradient: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+  background: var(--bg-gradient);
 }
 
 html {
