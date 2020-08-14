@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Logo from "./assets/whiskeymaniacslogo.png";
 import WhiskeyList from "./components/WhiskeyList";
+import fetchWhiskeys from "./api/whiskeys";
 function App() {
   return (
     <div className="app">
@@ -11,7 +12,7 @@ function App() {
         <input className="input" placeholder="Get your stuff..." />
       </header>
       <main className="main">
-        <WhiskeyList></WhiskeyList>
+        <WhiskeyList />
       </main>
       <footer>Footer</footer>
     </div>
