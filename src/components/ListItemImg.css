@@ -1,5 +1,5 @@
 .listItemImg {
-  padding-left: 10px;
+  margin: 0 10px;
   max-width: 5em;
   max-height: 5em;
   object-fit: contain;

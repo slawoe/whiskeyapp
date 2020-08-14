@@ -23,7 +23,8 @@ function WhiskeyList({ children }) {
           <ListItem key={whiskey.id}>
             <ListItemImg
               src={whiskey.img_url}
-              alt={`Picture of ${whiskey.title}`}
+              // alt={`Picture of ${whiskey.title}`}
+              alt={"Drunk up"}
             />
             <ListItemText
               title={whiskey.title}

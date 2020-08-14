@@ -5,8 +5,8 @@
 }
 
 :root {
-  --bg-gradient: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
-  background: var(--bg-gradient);
+  /* --bg-gradient: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+  background: var(--bg-gradient); */
 }
 
 html {
@@ -14,6 +14,10 @@ html {
   font-size: 14px;
 }
 body {
+  background-image: url(assets/whiskey.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

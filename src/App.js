@@ -13,7 +13,7 @@ function App() {
       <main className="main">
         <WhiskeyList />
       </main>
-      <footer>Footer</footer>
+      <footer className="footer">Footer</footer>
     </div>
   );
 }
