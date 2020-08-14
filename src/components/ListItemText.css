@@ -1,0 +1,15 @@
+.listItemText {
+  margin: 0;
+  padding-left: 5px;
+  flex-grow: 1;
+}
+
+.listItemText h2 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.listItemText p {
+  font-size: 0.8em;
+  margin: 0;
+}
