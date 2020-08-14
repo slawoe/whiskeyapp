@@ -32,20 +32,6 @@ function WhiskeyList({ children }) {
           </ListItem>
         ))}
       </List>
-      <List>
-        {whiskeys?.map((whiskey) => (
-          <ListItem key={whiskey.id}>
-            <ListItemImg
-              src={whiskey.img_url}
-              alt={`Picture of ${whiskey.title}`}
-            />
-            <ListItemText
-              title={whiskey.title}
-              description={whiskey.description}
-            />
-          </ListItem>
-        ))}
-      </List>
     </>
   );
 }
