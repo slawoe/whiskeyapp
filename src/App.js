@@ -1,12 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Logo from "./assets/whiskeymaniacslogo.png";
 
 function App() {
   return (
     <div className="app">
-      <header className="header">Whiskey Database</header>
-      <main></main>
+      <header className="header">
+        <h1>Whiskey Database </h1>
+        <img className="app__logo" src={Logo} alt="whiskeymaniacs logo" />
+        <input className="input" placeholder="Get your stuff..." />
+      </header>
+      <main className="main"></main>
       <footer></footer>
     </div>
   );
