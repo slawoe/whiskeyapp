@@ -11,19 +11,9 @@
   font-size: 0.6em;
   padding-bottom: 5px;
 }
-.app__logo {
-  width: 5em;
-  height: 5em;
-  object-fit: contain;
-}
 
 .main {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 5px 5px 5px 5px;
   overflow: auto;
-}
-
-.input {
-  border: none;
-  border-radius: 5px;
 }
