@@ -3,7 +3,7 @@ import "./ListItem.css";
 
 function ListItem({ href, children }) {
   return (
-    <a className="ListItem" href={href}>
+    <a className="listItem" href={href}>
       {children}
     </a>
   );

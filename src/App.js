@@ -1,10 +1,7 @@
 import React from "react";
 import "./App.css";
 import Logo from "./assets/whiskeymaniacslogo.png";
-import List from "../src/components/List";
-import ListItem from "../src/components/ListItem";
-import ListItemImg from "../src/components/ListItemImg";
-import ListItemText from "../src/components/ListItemText";
+import WhiskeyList from "./components/WhiskeyList";
 function App() {
   return (
     <div className="app">
@@ -14,13 +11,7 @@ function App() {
         <input className="input" placeholder="Get your stuff..." />
       </header>
       <main className="main">
-        <List>
-          Baam
-          <ListItem>
-            <ListItemImg src={"Test"} alt={"Test"} />
-            <ListItemText title={"Test"} description={"Test"}></ListItemText>
-          </ListItem>
-        </List>
+        <WhiskeyList></WhiskeyList>
       </main>
       <footer>Footer</footer>
     </div>
