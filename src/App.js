@@ -3,6 +3,7 @@ import "./App.css";
 import Logo from "./assets/whiskeymaniacslogo.png";
 import WhiskeyList from "./components/WhiskeyList";
 import MainHeader from "./components/MainHeader";
+import CollapsingCard from "./components/CollapsingCard";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <main className="main">
         <WhiskeyList />
       </main>
-      <footer className="footer">Footer</footer>
+      <footer className="footer"></footer>
     </div>
   );
 }
