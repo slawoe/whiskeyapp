@@ -2,28 +2,35 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
 }
 
 .header {
   display: grid;
   place-items: center;
   font-size: 0.6em;
-  margin-bottom: 5px;
-  color: white;
+  padding-bottom: 5px;
   grid-row-start: 1;
   grid-row-end: 2;
+  background: white;
+  margin-bottom: 10px;
 }
 
 .main {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px 5px 5px 5px;
-  overflow: scroll;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  border-radius: 8px;
+  overflow: auto;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(assets/whiskey.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
 }
 
 .footer {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: white;
+
+  margin-top: 10px;
 }

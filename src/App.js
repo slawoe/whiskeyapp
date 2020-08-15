@@ -14,7 +14,7 @@ function App() {
       <main className="main">
         <WhiskeyList />
       </main>
-      <footer className="footer"></footer>
+      <footer className="footer">Footer</footer>
     </div>
   );
 }

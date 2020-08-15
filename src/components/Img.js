@@ -1,5 +1,5 @@
 import React from "react";
-import "./ListItemImg.css";
+import "./Img.css";
 
 function ListItemImg({ src, alt }) {
   return <img className="listItemImg" src={src} alt={alt} />;
