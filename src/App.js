@@ -4,6 +4,7 @@ import Logo from "./assets/whiskeymaniacslogo.png";
 import WhiskeyList from "./components/WhiskeyList";
 import MainHeader from "./components/MainHeader";
 import CollapsingCard from "./components/CollapsingCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
       <main className="main">
         <WhiskeyList />
       </main>
-      <footer className="footer">Footer</footer>
+      <footer className="footer">
+        <Footer />
+      </footer>
     </div>
   );
 }
