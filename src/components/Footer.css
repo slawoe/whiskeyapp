@@ -1,0 +1,13 @@
+.footerWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerWrapper img {
+  margin: 0 10px;
+  max-width: 3em;
+  max-height: 4em;
+  object-fit: contain;
+}

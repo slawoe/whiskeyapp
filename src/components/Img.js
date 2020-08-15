@@ -1,8 +1,8 @@
 import React from "react";
 import "./Img.css";
 
-function ListItemImg({ src, alt }) {
+function Img({ src, alt }) {
   return <img className="listItemImg" src={src} alt={alt} />;
 }
 
-export default ListItemImg;
+export default Img;
