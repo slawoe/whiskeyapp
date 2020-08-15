@@ -10,10 +10,27 @@
   place-items: center;
   font-size: 0.6em;
   padding-bottom: 5px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: white;
+  margin-bottom: 10px;
 }
 
 .main {
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 8px;
   overflow: auto;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(assets/whiskey.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: white;
+
+  margin-top: 10px;
 }
