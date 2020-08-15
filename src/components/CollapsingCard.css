@@ -4,7 +4,7 @@
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 100vw;
   border: none;
   text-align: left;
   outline: none;
@@ -22,5 +22,17 @@
   padding: 0 18px;
   display: none;
   overflow: hidden;
+  background: #f1f1f1;
+}
+
+.content--active {
+  display: block;
+  overflow: auto;
   background-color: #f1f1f1;
+}
+
+.badMF {
+  margin: 0;
+  background: white;
+  padding: 18px;
 }

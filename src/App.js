@@ -13,7 +13,8 @@ function App() {
         <MainHeader />
       </header>
       <main className="main">
-        <WhiskeyList />
+        <WhiskeyList></WhiskeyList>
+        <CollapsingCard></CollapsingCard>
       </main>
       <footer className="footer">
         <Footer />
