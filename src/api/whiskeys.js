@@ -22,6 +22,7 @@ export default async function fetchWhiskeys() {
     price: whiskey.price,
     rating: whiskey.rating,
     region: whiskey.region,
+    img_url: whiskey.comparables.list_img_url,
   }));
   return whiskeys;
 }

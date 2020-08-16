@@ -6,11 +6,14 @@ import ListItemText from "./ListItemText";
 import fetchWhiskeys from "../api/whiskeys";
 import LoadingScreen from "./LoadingScreen";
 import "./WhiskeyList.css";
+import App from "../App";
+import Tumbler from "../assets/tumbler.svg";
+import MainHeader from "./MainHeader";
 
 function WhiskeyList({ children }) {
   const [whiskeys, setWhiskeys] = useState(null);
   const [isLoading, setIsLoaded] = useState(false);
-  // const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     async function showWhiskeys() {
@@ -21,26 +24,28 @@ function WhiskeyList({ children }) {
     showWhiskeys();
   }, []);
 
-  // const filteredWhiskeys = whiskeys?.filter((whiskey) => {
-  //   return whiskey.name.startsWith(query);
-  // });
+  const filteredWhiskeys = whiskeys?.filter((getWhiskey) => {
+    return getWhiskey.title.startsWith(query);
+  });
 
   if (!isLoading) {
     return <LoadingScreen></LoadingScreen>;
   }
   return (
-    <div class="whiskeyList">
+    <div className="whiskeyList">
       <List>
-        {whiskeys?.map((whiskey) => (
-          <ListItem key={whiskey.id}>
+        {filteredWhiskeys?.map((whiskey) => (
+          <ListItem key={whiskey.title}>
             <Img
-              src={whiskey.img_url}
+              src={Tumbler}
               // alt={`Picture of ${whiskey.title}`}
-              alt={"Drunk up"}
+              alt={""}
             />
             <ListItemText
               title={whiskey.title}
-              description={whiskey.description}
+              price={`Price: ${whiskey.price},- $`}
+              region={`Region: ${whiskey.region}`}
+              rating={`Rating: ${whiskey.rating} of 100`}
             />
           </ListItem>
         ))}
