@@ -29,7 +29,7 @@ function App() {
       </header>
       <main className="main">
         <WhiskeyList></WhiskeyList>
-        {/* <CollapsingCard></CollapsingCard> */}
+        <CollapsingCard></CollapsingCard>
       </main>
       <footer className="footer">
         <Footer />

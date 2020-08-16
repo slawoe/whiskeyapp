@@ -4,39 +4,19 @@ import "./CollapsingCard.css";
 function CollapsingCard({ children }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const activateCollapse = () => {
-    setIsCollapsed(!isCollapsed);
+    setIsCollapsed((collapsed) => !collapsed);
   };
-  if (isCollapsed === false) {
-    return (
-      <>
-        <button
-          onClick={activateCollapse}
-          type="button"
-          className="collapsible"
-        >
-          Open Collapsible
-        </button>
-        <div className="content">
-          <p className="badMF">Lorem ipsum...</p>
-        </div>
-      </>
-    );
-  } else if (isCollapsed === true) {
-    return (
-      <>
-        <button
-          onClick={activateCollapse}
-          type="button"
-          className="collapsible"
-        >
-          Open Collapsible
-        </button>
-        <div className="content-active">
-          <p className="badMF">Lorem ipsum...</p>
-        </div>
-      </>
-    );
-  }
+
+  return (
+    <>
+      <button onClick={activateCollapse} type="button" className="collapsible">
+        Open Collapsible
+      </button>
+      <div className={isCollapsed ? "content---active" : "content"}>
+        <p className="collapsibleP">Lorem ipsum...</p>
+      </div>
+    </>
+  );
 }
 
 export default CollapsingCard;
