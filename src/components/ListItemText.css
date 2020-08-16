@@ -1,11 +1,9 @@
 .listItemText {
-  margin: 0 0 0 5px;
-  padding-left: 5px;
   flex-grow: 1;
 }
 
 .listItemText h2 {
-  font-size: 1em;
+  font-size: 0.85em;
   margin: 0;
 }
 

@@ -11,7 +11,7 @@ function MainHeader({ children }) {
         <Img src={Logo} alt="logo" />
         <Title thetitle="Whiskey Database"></Title>
       </div>
-      <InputField placeholder="Get the Whiskey..." />
+      <InputField placeholder="Search the right one..." />
     </>
   );
 }

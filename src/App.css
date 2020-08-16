@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 15% 75% 10%;
 }
 
 .header {
@@ -32,4 +32,20 @@
   grid-row-end: 4;
   background: white;
   margin-top: 10px;
+}
+
+.firstRowHeader {
+  display: flex;
+  margin-top: 5px;
+}
+.mainLogo {
+  width: 5em;
+  height: 5em;
+  object-fit: contain;
+}
+
+.input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
 }
