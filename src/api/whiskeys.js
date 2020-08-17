@@ -1,4 +1,4 @@
-export default async function fetchWhiskeys() {
+export default async function fetchWhiskeys(search) {
   const whiskeyList = [];
   let i = 1;
   while (i < 10) {
@@ -15,14 +15,16 @@ export default async function fetchWhiskeys() {
     i++;
   }
   console.log(whiskeyList);
-  const whiskeys = whiskeyList.map((whiskey) => ({
-    title: whiskey.title,
-    description: whiskey.description,
-    id: whiskey.id,
-    price: whiskey.price,
-    rating: whiskey.rating,
-    region: whiskey.region,
-    img_url: whiskey.comparables.list_img_url,
-  }));
+  const whiskeys = whiskeyList
+    .map((whiskey) => ({
+      title: whiskey.title,
+      description: whiskey.description,
+      id: whiskey.id,
+      price: whiskey.price,
+      rating: whiskey.rating,
+      region: whiskey.region,
+      img_url: whiskey.comparables.list_img_url,
+    }))
+    .filter((whiskey) => whiskey.title.match(new RegExp(search, "i")));
   return whiskeys;
 }

@@ -8,12 +8,15 @@ import Footer from "./components/Footer";
 import fetchWhiskeys from "./api/whiskeys";
 
 function App() {
-  // const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
 
   return (
     <div className="app">
       <header className="header">
-        <MainHeader />
+        <MainHeader
+          whiskeyQuery={query}
+          onWhiskeyQueryChange={(whiskeyQuery) => setQuery(whiskeyQuery)}
+        />
         {/* <div className="firstRowHeader">
           <img className="mainLogo" src={Logo} art="Logo" />
           <span>Whiskey Database</span>
@@ -28,7 +31,7 @@ function App() {
         ></input> */}
       </header>
       <main className="main">
-        <WhiskeyList></WhiskeyList>
+        <WhiskeyList query={query}></WhiskeyList>
         <CollapsingCard></CollapsingCard>
       </main>
       <footer className="footer">
