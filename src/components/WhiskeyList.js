@@ -10,19 +10,18 @@ import App from "../App";
 import Tumbler from "../assets/tumbler.svg";
 import MainHeader from "./MainHeader";
 
-function WhiskeyList({ children }) {
+function WhiskeyList({ query }) {
   const [whiskeys, setWhiskeys] = useState(null);
   const [isLoading, setIsLoaded] = useState(false);
-  const [query, setQuery] = useState("");
 
   useEffect(() => {
     async function showWhiskeys() {
-      const newWhiskeys = await fetchWhiskeys();
+      const newWhiskeys = await fetchWhiskeys(query);
       setWhiskeys(newWhiskeys);
       setIsLoaded(true);
     }
     showWhiskeys();
-  }, []);
+  }, [query]);
 
   const filteredWhiskeys = whiskeys?.filter((getWhiskey) => {
     return getWhiskey.title.startsWith(query);
