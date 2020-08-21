@@ -5,6 +5,7 @@ import MainHeader from "./components/MainHeader";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import GlobalStyles from "./GlobalStyles";
+import CollapsingCard from "./components/CollapsingCard";
 
 function App() {
   const [query, setQuery] = useState("");

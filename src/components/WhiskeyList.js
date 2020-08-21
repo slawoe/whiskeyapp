@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import styled from "@emotion/styled";
 import List from "./List";
-import ListItem from "./ListItem";
+import ListItemLink from "./ListItem";
 import Image from "./Img";
 import ListItemText from "./ListItemText";
 import fetchWhiskeys from "../api/whiskeys";
 import LoadingScreen from "./LoadingScreen";
-import "./WhiskeyList.css";
 import Tumbler from "../assets/tumbler.svg";
 
 function WhiskeyList({ query }) {
@@ -25,14 +25,18 @@ function WhiskeyList({ query }) {
     return getWhiskey.title.startsWith(query);
   });
 
+  const WhiskeyListing = styled.div`
+    background: rgba(255, 255, 255, 0.7);
+  `;
+
   if (!isLoading) {
     return <LoadingScreen></LoadingScreen>;
   }
   return (
-    <div className="whiskeyList">
+    <WhiskeyListing>
       <List>
         {filteredWhiskeys?.map((whiskey) => (
-          <ListItem key={whiskey.title}>
+          <ListItemLink key={whiskey.title}>
             <Image
               src={Tumbler}
               // alt={`Picture of ${whiskey.title}`}
@@ -44,10 +48,10 @@ function WhiskeyList({ query }) {
               region={`Region: ${whiskey.region}`}
               rating={`Rating: ${whiskey.rating} of 100`}
             />
-          </ListItem>
+          </ListItemLink>
         ))}
       </List>
-    </div>
+    </WhiskeyListing>
   );
 }
 export default WhiskeyList;

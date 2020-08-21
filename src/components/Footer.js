@@ -7,13 +7,12 @@ import Preferences from "../assets/preferences.svg";
 
 const MainFooter = styled.footer`
   margin: 0 10px;
-  max-width: 5em;
   max-height: 5em;
   object-fit: contain;
   grid-row-start: 3;
   grid-row-end: 4;
   background: white;
-  margin-top: 10px;
+  padding-top: 3px;
 `;
 
 const FooterNavigation = styled.nav`
