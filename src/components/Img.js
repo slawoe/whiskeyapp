@@ -1,8 +1,15 @@
 import React from "react";
-import "./Img.css";
+import styled from "@emotion/styled";
+
+const Image = styled.img`
+  margin: 0 10px;
+  max-width: 5em;
+  max-height: 5em;
+  object-fit: contain;
+`;
 
 function Img({ src, alt }) {
-  return <img className="listItemImg" src={src} alt={alt} />;
+  return <Image src={src} alt={alt} />;
 }
 
 export default Img;

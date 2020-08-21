@@ -1,24 +1,42 @@
 import React from "react";
-import InputField from "./InputField";
-import Img from "./Img";
+import MainLogo from "./MainLogo";
 import Logo from "../assets/whiskeymaniacslogo.png";
 import Title from "./Title";
-import "./MainHeader.css";
+import styled from "@emotion/styled";
+
+const Header = styled.header`
+  display: grid;
+  place-items: center;
+  font-size: 0.6em;
+  padding-bottom: 5px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: white;
+  margin-bottom: 10px;
+`;
+
+const HeaderTitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+`;
+
 function MainHeader({ whiskeyQuery, onWhiskeyQueryChange }) {
   return (
     <>
-      <div className="firstRowHeader">
-        <Img src={Logo} alt="logo" />
-        <Title thetitle="Whiskey Database"></Title>
-      </div>
-      <input
-        value={whiskeyQuery}
-        onChange={(event) => {
-          onWhiskeyQueryChange(event.target.value);
-        }}
-        className=""
-        placeholder="Get your whiskey"
-      ></input>
+      <Header>
+        <HeaderTitleContainer>
+          <MainLogo src={Logo} alt="logo" />
+          <Title thetitle="Whiskey Database"></Title>
+        </HeaderTitleContainer>
+        <input
+          value={whiskeyQuery}
+          onChange={(event) => {
+            onWhiskeyQueryChange(event.target.value);
+          }}
+          placeholder="Get your whiskey"
+        ></input>
+      </Header>
     </>
   );
 }

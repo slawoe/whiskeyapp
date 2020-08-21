@@ -1,20 +1,42 @@
 import React, { useState } from "react";
-import "./CollapsingCard.css";
+import styled from "@emotion/styled";
 
 function CollapsingCard({ children }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const activateCollapse = () => {
-    setIsCollapsed((collapsed) => !collapsed);
+    setIsCollapsed((collapsed) => !isCollapsed);
   };
 
+  const CollapsingCardButton = styled.button`
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  `;
+
+  const CollapsingCardTextContainer = styled.div`
+    display: ${(props) => (props.isCollapsed ? "none" : "block")};
+    overflow: ${(props) => (props.isCollapsed ? "hidden" : "auto")};
+  `;
+
+  const CollapsingCardText = styled.p`
+    margin: 0;
+    background: white;
+    padding: 18px;
+  `;
   return (
     <>
-      <button onClick={activateCollapse} type="button" className="collapsible">
+      <CollapsingCardButton onClick={activateCollapse} type="button">
         Open Collapsible
-      </button>
-      <div className={isCollapsed ? "content---active" : "content"}>
-        <p className="collapsibleP">Lorem ipsum...</p>
-      </div>
+      </CollapsingCardButton>
+      <CollapsingCardTextContainer>
+        <CollapsingCardText>Lorem ipsum...</CollapsingCardText>
+      </CollapsingCardTextContainer>
     </>
   );
 }
