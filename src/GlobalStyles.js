@@ -11,6 +11,7 @@ const GlobalStyles = () => (
       }
 
       #root {
+        @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
         width: 100vw;
         height: 100vh;
         display: grid;

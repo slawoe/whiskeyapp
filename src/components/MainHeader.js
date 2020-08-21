@@ -13,6 +13,9 @@ const Header = styled.header`
   grid-row-end: 2;
   background: white;
   margin-bottom: 10px;
+  & > input {
+    border-radius: 5px 2px 5px 2px;
+  }
 `;
 
 const HeaderTitleContainer = styled.div`
