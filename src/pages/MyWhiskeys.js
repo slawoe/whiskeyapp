@@ -7,6 +7,7 @@ import ListItemLink from "../components/ListItem";
 import ListItemText from "../components/ListItemText";
 import Img from "../components/Img";
 import Tumbler from "../assets/tumbler.svg";
+import DeleteButton from "../components/DeleteButton";
 
 const fetchMyWhiskey = async () => {
   const response = await fetch("http://localhost:3000/mywhiskies");
@@ -41,6 +42,7 @@ function Title() {
                 rating={`Rating: ${whiskey.rating} of 100`}
                 author={`Author: ${whiskey.author}`}
               />
+              <DeleteButton />
             </ListItemLink>
           ))}
         </List>

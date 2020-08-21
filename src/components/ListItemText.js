@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import AddButton from "./AddButton";
 const ListItemInnerText = styled.div`
   flex-grow: 1;
   padding: 2px 0;
@@ -25,7 +24,6 @@ function ListItemText({ title, price, region, rating, author, description }) {
         <p>{rating}</p>
         <p>{author}</p>
       </ListItemInnerText>
-      <AddButton />
     </>
   );
 }
