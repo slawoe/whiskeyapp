@@ -1,34 +1,52 @@
 {
-  "todos": [
+  "mywhiskies": [
     {
       "id": 1,
-      "task": "JavaScript Tutorial durcharbeiten",
-      "author": "Slawo",
-      "completed": false
+      "title": "Suff",
+      "price": 30,
+      "region": "Supermarkt",
+      "rating": 50,
+      "author": "Slawomir Ernst"
     },
     {
       "id": 2,
-      "task": "React Lift State Up angucken",
-      "author": "Slawo",
-      "completed": false
+      "title": "Test",
+      "price": 30,
+      "region": "Supermarkt",
+      "rating": 50,
+      "author": "Slawomir Ernst"
     },
     {
       "id": 3,
-      "task": "Gesellenstück rocken",
-      "author": "Slawo",
-      "completed": false
+      "title": "Tullamore",
+      "price": 30,
+      "region": "Supermarkt",
+      "rating": 50,
+      "author": "Slawomir Ernst"
     },
     {
       "id": 4,
-      "task": "Urlaub nach dem Bootcamp",
-      "author": "Slawo",
-      "completed": false
+      "title": "Johnny Walker",
+      "price": 30,
+      "region": "Supermarkt",
+      "rating": 50,
+      "author": "Slawomir Ernst"
     },
     {
-      "task": "Therapie wegen Leons Tempo anfangen",
-      "author": "Slawo",
-      "createdAt": 1597843261593,
-      "id": 5
+      "id": 5,
+      "title": "Jim Beam",
+      "price": 30,
+      "region": "Supermarkt",
+      "rating": 50,
+      "author": "Slawomir Ernst"
+    },
+    {
+      "id": 6,
+      "title": "Jim Beam",
+      "price": 30,
+      "region": "Supermarkt",
+      "rating": 50,
+      "author": "Slawomir Ernst"
     }
   ]
 }

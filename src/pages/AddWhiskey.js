@@ -21,17 +21,21 @@ const Input = styled.input`
   display: flex;
   justify-content: space-between;
   align-items: space-between;
+  margin: 2px;
+  border-radius: 5px 2px 5px 2px;
 `;
 
 const Heading = styled.h2`
   text-align: center;
+  font-family: "Lobster";
+  font-size: 1em;
 `;
 
 function AddForm({ children }) {
   const [title, setTitle] = useState("");
   const [region, setRegion] = useState("");
-  const [rating, setRating] = useState(0);
-  const [price, setPrice] = useState(0);
+  const [rating, setRating] = useState(undefined);
+  const [price, setPrice] = useState(undefined);
   const [author, setAuthor] = useState("");
 
   function titleChange(title) {
@@ -49,11 +53,11 @@ function AddForm({ children }) {
   function authorChange(author) {
     setAuthor(author.target.value);
   }
-  const todo = { title, region, rating, price, createdAt: Date.now() };
+  const newWhiskey = { title, region, rating, price, createdAt: Date.now() };
   return (
     <AddWhiskeyContainer>
       <Form>
-        <Heading>Add a Whiskey to the Database</Heading>
+        <Heading>Add a Whiskey to your Database</Heading>
         <Label>
           <Input placeholder="Name" value={title} onChange={titleChange} />
         </Label>
@@ -79,7 +83,11 @@ function AddForm({ children }) {
         <Label>
           <Input placeholder="Author" value={author} onChange={authorChange} />
         </Label>
-        <Input type="submit" value="Submit" disabled={!title || !price} />
+        <Input
+          type="submit"
+          value="Add to your Database"
+          disabled={!title || !price || !author}
+        />
       </Form>
     </AddWhiskeyContainer>
   );

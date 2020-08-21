@@ -47,6 +47,7 @@ function WhiskeyList({ query }) {
               price={`Price: ${whiskey.price},- $`}
               region={`Region: ${whiskey.region}`}
               rating={`Rating: ${whiskey.rating} of 100`}
+              author={`Author: ${whiskey.author}`}
             />
           </ListItemLink>
         ))}
