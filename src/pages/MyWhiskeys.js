@@ -28,7 +28,7 @@ function Title() {
       {status === "success" && (
         <List>
           {data.map((whiskey) => (
-            <ListItemLink key={whiskey.title}>
+            <ListItemLink key={whiskey.id}>
               <Img
                 src={Tumbler}
                 // alt={`Picture of ${whiskey.title}`}

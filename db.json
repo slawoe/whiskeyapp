@@ -39,6 +39,14 @@
       "region": "Supermarkt",
       "rating": 50,
       "author": "Slawomir Ernst"
+    },
+    {
+      "id": 6,
+      "title": "Jim Beam",
+      "price": 30,
+      "region": "Supermarkt",
+      "rating": 50,
+      "author": "Slawomir Ernst"
     }
   ]
 }
