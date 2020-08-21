@@ -7,6 +7,7 @@ import ListItemText from "../components/ListItemText";
 import fetchWhiskeys from "../api/whiskeys";
 import LoadingScreen from "../components/LoadingScreen";
 import Tumbler from "../assets/tumbler.svg";
+import AddingButton from "../components/AddButton";
 
 function WhiskeyList({ query }) {
   const [whiskeys, setWhiskeys] = useState(null);
@@ -49,6 +50,7 @@ function WhiskeyList({ query }) {
               rating={`Rating: ${whiskey.rating} of 100`}
               author={`Author: ${whiskey.author}`}
             />
+            <AddingButton />
           </ListItemLink>
         ))}
       </List>
