@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Logo from "./assets/whiskeymaniacslogo.png";
 import WhiskeyList from "./components/WhiskeyList";
@@ -17,18 +18,6 @@ function App() {
           whiskeyQuery={query}
           onWhiskeyQueryChange={(whiskeyQuery) => setQuery(whiskeyQuery)}
         />
-        {/* <div className="firstRowHeader">
-          <img className="mainLogo" src={Logo} art="Logo" />
-          <span>Whiskey Database</span>
-        </div>
-        <input
-          value={query}
-          onChange={(event) => {
-            setQuery(event.target.value);
-          }}
-          className="input"
-          placeholder="Get Whiskey bro..."
-        ></input> */}
       </header>
       <main className="main">
         <WhiskeyList query={query}></WhiskeyList>

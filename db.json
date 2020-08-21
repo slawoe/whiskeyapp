@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "JavaScript Tutorial durcharbeiten",
+      "author": "Slawo",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "task": "React Lift State Up angucken",
+      "author": "Slawo",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "task": "Gesellenstück rocken",
+      "author": "Slawo",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "task": "Urlaub nach dem Bootcamp",
+      "author": "Slawo",
+      "completed": false
+    },
+    {
+      "task": "Therapie wegen Leons Tempo anfangen",
+      "author": "Slawo",
+      "createdAt": 1597843261593,
+      "id": 5
+    }
+  ]
+}
