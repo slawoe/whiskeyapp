@@ -7,7 +7,7 @@ const MainContainer = styled.main`
   overflow: auto;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-image: url(../assets/whiskey.jpg);
+  background-image: url(${Background});
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
