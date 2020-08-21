@@ -4,6 +4,7 @@ import Image from "./Img";
 import Bottle from "../assets/bottle.svg";
 import Tumbler from "../assets/tumbler.svg";
 import Preferences from "../assets/preferences.svg";
+import { Link } from "react-router-dom";
 
 const MainFooter = styled.footer`
   margin: 0 10px;
@@ -17,11 +18,11 @@ const MainFooter = styled.footer`
 
 const FooterNavigation = styled.nav`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  & > img {
-    max-width: 3em;
-    max-height: 4em;
+  justify-content: space-around;
+  margin: 5px;
+  & > a > img {
+    height: 2em;
+    width: 2em;
   }
 `;
 
@@ -29,9 +30,15 @@ function Footer({ children }) {
   return (
     <MainFooter>
       <FooterNavigation>
-        <Image src={Bottle} alt="Test" />
-        <Image src={Tumbler} alt="Sortiment" />
-        <Image src={Preferences} alt="Preferences" />
+        <Link to="/">
+          <Image src={Bottle} alt="MyWhiskeys" />
+        </Link>
+        <Link to="/my">
+          <Image src={Tumbler} alt="MySortiment" />
+        </Link>
+        <Link to="/add">
+          <Image src={Preferences} alt="AddWhiskeys" />
+        </Link>
       </FooterNavigation>
     </MainFooter>
   );

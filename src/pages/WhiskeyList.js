@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styled from "@emotion/styled";
-import List from "./List";
-import ListItemLink from "./ListItem";
-import Image from "./Img";
-import ListItemText from "./ListItemText";
+import List from "../components/List";
+import ListItemLink from "../components/ListItem";
+import Image from "../components/Img";
+import ListItemText from "../components/ListItemText";
 import fetchWhiskeys from "../api/whiskeys";
-import LoadingScreen from "./LoadingScreen";
+import LoadingScreen from "../components/LoadingScreen";
 import Tumbler from "../assets/tumbler.svg";
 
 function WhiskeyList({ query }) {
