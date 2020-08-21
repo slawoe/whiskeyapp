@@ -1,8 +1,14 @@
 import React from "react";
-import "./MainLogo.css";
+import styled from "@emotion/styled";
 
-function ListItemImg({ src, alt }) {
-  return <img className="mainLogo" src={src} alt={alt} />;
+const Logo = styled.img`
+  width: 5em;
+  height: 5em;
+  object-fit: contain;
+`;
+
+function MainLogo({ src, alt }) {
+  return <Logo src={src} alt={alt} />;
 }
 
-export default ListItemImg;
+export default MainLogo;

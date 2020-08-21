@@ -1,8 +1,15 @@
 import React from "react";
-import "./Title.css";
+import styled from "@emotion/styled";
+
+const MainTitle = styled.h1`
+  color: black;
+  font-family: "Lobster";
+  font-size: 3em;
+  margin: 0;
+`;
 
 function Title({ thetitle }) {
-  return <h1 className="title">{thetitle}</h1>;
+  return <MainTitle>{thetitle}</MainTitle>;
 }
 
 export default Title;
