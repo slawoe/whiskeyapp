@@ -49,31 +49,13 @@
       "author": "Slawomir Ernst"
     },
     {
-      "title": "yxcxyxcyxc",
-      "region": "yxcyxcyxc",
-      "rating": 432234432,
-      "price": 4234234,
-      "author": "xcyxcxyc",
-      "createdAt": 1598035179720,
-      "id": 7
-    },
-    {
-      "title": "dasdasd",
-      "region": "dasdasd",
-      "rating": 324,
-      "price": 34234,
-      "author": "dsadasd",
-      "createdAt": 1598036058318,
-      "id": 8
-    },
-    {
-      "title": "bvcbvcbcv",
-      "region": "bvbccbv",
-      "rating": 4534534,
-      "price": 5345435,
-      "author": "fgdgdfgdfg",
-      "createdAt": 1598036069175,
-      "id": 9
+      "title": "Slawos Barrell",
+      "region": "Lüneburg",
+      "rating": 100,
+      "price": 1,
+      "author": "Jonas Imm",
+      "createdAt": 1598196070620,
+      "id": 10
     }
   ]
 }

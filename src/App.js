@@ -25,7 +25,7 @@ function App() {
               <AddForm />
             </Route>
             <Route path="/my">
-              <MyWhiskeys></MyWhiskeys>
+              <MyWhiskeys query={query}></MyWhiskeys>
             </Route>
             <Route path="/">
               <WhiskeyList query={query}></WhiskeyList>
