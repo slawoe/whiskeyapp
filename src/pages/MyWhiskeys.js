@@ -17,8 +17,12 @@ const fetchMyWhiskey = async () => {
 const MyWhiskeyContainer = styled.div`
   background: rgba(255, 255, 255, 0.7);
 `;
-function Title() {
+function Title({ query }) {
   const { data, status } = useQuery("MyWhiskey", fetchMyWhiskey);
+
+  const filteredWhiskeys = data?.filter((getWhiskey) => {
+    return getWhiskey.title.startsWith(query);
+  });
 
   return (
     <MyWhiskeyContainer>
@@ -28,7 +32,7 @@ function Title() {
       )}
       {status === "success" && (
         <List>
-          {data.map((whiskey) => (
+          {filteredWhiskeys?.map((whiskey) => (
             <ListItemLink key={whiskey.id}>
               <Img
                 src={Tumbler}
