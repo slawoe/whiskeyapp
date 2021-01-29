@@ -28,7 +28,7 @@ function Title({ query }) {
     <MyWhiskeyContainer>
       {status === "loading" && <LoadingScreen />}
       {status === "error" && (
-        <div>Fuck JavaScript. Something went wrong again!</div>
+        <div>JavaScript... Something went wrong again!</div>
       )}
       {status === "success" && (
         <List>
