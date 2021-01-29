@@ -57,18 +57,18 @@ function AddForm() {
     setAuthor(author.target.value);
   }
 
+  const whiskey = {
+    title,
+    region,
+    rating,
+    price,
+    author,
+    createdAt: Date.now(),
+  };
   async function handleSubmit(event) {
     event.preventDefault();
     setLoading(true);
     setError(false);
-    const whiskey = {
-      title,
-      region,
-      rating,
-      price,
-      author,
-      createdAt: Date.now(),
-    };
     try {
       await postWhiskey(whiskey);
       setTitle("");
